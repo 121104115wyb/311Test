@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    //弹出框
+    alert("我是弹出框");
+
+
+    //数值交换
+    var num1 = 100;
+    var num2 = 200;
+    var num3 = num1;
+    num1 = num2;
+    num2 = num3;
+    console.log("num1---" + num1 + "----" + "num2----" + num2);
+
+    //数值交换
+    var testnum1 = 30;
+    var testnum2 = 50;
+    testnum2 = testnum2 + testnum1;
+    testnum1 = testnum2 - testnum1;
+    testnum2 = testnum2 - testnum1;
+    console.log(testnum1);
+
+    //类型转换转数字
+    console.log("取整数100：--" + parseInt(100));
+    console.log("取整数99.99--" + parseInt(99.99));
+    console.log("取整数-1:--" + parseInt(-1));
+    console.log("取整数：汉字--" + parseInt("汉字"));
+    console.log("取整数：100--" + parseInt("100"))
+    console.log("取整数：100.34--" + parseInt("100.34"))
+    console.log("取整数：true--" + parseInt(true))
+    //类型转换转小数
+    console.log("取浮点100：--" + parseFloat(100));
+    console.log("取浮点99.99--" + parseFloat(99.99));
+    console.log("取浮点-1:--" + parseFloat(-1));
+    console.log("取浮点：汉字--" + parseFloat("汉字"));
+    console.log("取浮点：100--" + parseFloat("100"))
+    console.log("取浮点：100.34--" + parseFloat("100.34"))
+    console.log("取浮点：true--" + parseFloat(true))
+
+    //类型转换转数字
+    console.log("取number100：--" + Number(100));
+    console.log("取number99.99--" + Number(99.99));
+    console.log("取number-1:--" + Number(-1));
+    console.log("取number：汉字--" + Number("汉字"));
+    console.log("取number：100--" + Number("100"))
+    console.log("取number：100.34--" + Number("100.34"))
+    console.log("取number：true--" + Number(true))
+
+    //isNaN()的使用介绍
+    if (!isNaN(100)) {
+        console.log("100不是  不是一个number");
+        console.log(isNaN(100));
+        console.log(isNaN("100.0099"));
+    } else if (isNaN("100")) {
+        console.log("字符串100是  不是一个number");
+    }
+
+    //算术运算符和逻辑运算符
+    console.log(100 + 200);
+    console.log(100 * 200);
+    console.log("100" + 300);
+    console.log("100" - 20);
+    console.log("200" / 20);
+    console.log(10 % 3);
+    console.log(10 / 3);
+    console.log(10 == 12);
+    console.log("100" == 100);
+    console.log("100" === 100);
+    console.log(5 >= 3 && 3 >= 4);
+    console.log(5 >= 3 || 3 >= 4);
+    var test1 = 10;
+    console.log(test1 += 10);
+
+
+</script>
+
+</body>
+</html>

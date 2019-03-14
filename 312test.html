@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+
+    /**
+     * 不能用小数进行验证，也不能用NaN进行相等的比较
+     * @type {number}
+     * 但是现在验证的小数是相等的，难道是javaScript被优化了
+     *
+     * NaN 的验证是不成立的
+     *
+     */
+    var num = 0.3;
+    var num1 = 0.4;
+    var result = num + num1;
+
+    console.log(result);
+    console.log(result == 0.7)
+    console.log((num + num1) == 0.7);
+
+    var num3;
+    console.log((num3 + 10) == NaN);
+
+    //通过isNaN来判断这个变量是不是一个数字
+    //判断结果是不是一个数字，当是数字返回false，不是数字返回true;
+    var num4;
+    console.log(isNaN(num4));
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    //获取字符串的长度
+    var testName = "who are you I am Jane"
+    console.log(testName.length);
+
+    //int类型相加减
+    var a1 = 100;
+    var a2 = 200;
+    console.log(a1 - a2);
+
+    //当字符串与int类型相减时，执行代码时，浏览器会默认把字符串的转为int类型，进行相减
+    var aString = "100";
+    var bString = 20;
+    console.log(aString - bString);
+
+    //当字符串不能转换为int类型时，让字符串与int类型相减，会报NaN类型错误
+    var cString = "您好";
+    var dInt = 20;
+    console.log(cString - dInt);
+
+    //当字符串与int类型相加时，就是默认的字符串的拼接
+    var eString = "您好";
+    var fInt = 20;
+    console.log(eString + fInt);
+
+    //当字符串与int类型进行乘法运算时，浏览器引擎也会默认把字符串转换成int类型进行乘法的运算，如果不能转换，就会报NaN的错误
+    var gString = "20";
+    var hInt = 20;
+    console.log(gString * hInt);
+
+</script>
+
+</body>
+</html>
